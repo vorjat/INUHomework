@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="420.0" maxWidth="280.0" minHeight="420.0" minWidth="280.0" prefHeight="420.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.CalcController">
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" />
+      <RowConstraints fillHeight="false" maxHeight="70.0" minHeight="70.0" prefHeight="70.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+      <ColumnConstraints maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+      <ColumnConstraints maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+      <ColumnConstraints maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+   </columnConstraints>
+   <children>
+      <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="black-button" stylesheets="@../../css/app.css" text="." textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Group GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="clearButton" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#clearButtonClick" prefHeight="70.0" prefWidth="70.0" styleClass="green-button" stylesheets="@../../css/app.css" text="AC">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="black-button" stylesheets="@../../css/app.css" text="+/-" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="140.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="black-button" stylesheets="@../../css/app.css" text="\%" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="buttonD" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operatorButtonClick" prefHeight="70.0" prefWidth="70.0" styleClass="orange-button" stylesheets="@../../css/app.css" text="÷">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonR" layoutY="70.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operatorButtonClick" prefHeight="70.0" prefWidth="70.0" styleClass="orange-button" stylesheets="@../../css/app.css" text="X">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonM" layoutY="140.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operatorButtonClick" prefHeight="70.0" prefWidth="70.0" styleClass="orange-button" stylesheets="@../../css/app.css" text="-">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonP" layoutY="210.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#operatorButtonClick" prefHeight="70.0" prefWidth="70.0" styleClass="orange-button" stylesheets="@../../css/app.css" text="+">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="calcButton" layoutY="280.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#calcButtonClick" prefHeight="70.0" prefWidth="70.0" styleClass="orange-button" stylesheets="@../../css/app.css" text="=">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Button fx:id="button7" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="7" GridPane.rowIndex="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button8" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button9" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="4" GridPane.rowIndex="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button5" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button6" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="70.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button0" maxHeight="70.0" maxWidth="140.0" minHeight="70.0" minWidth="140.0" mnemonicParsing="false" onAction="#numberButtonClick" prefHeight="70.0" prefWidth="140.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="screen" alignment="CENTER_RIGHT" maxHeight="70.0" maxWidth="280.0" minHeight="70.0" minWidth="280.0" prefHeight="70.0" prefWidth="280.0" styleClass="panel-label" stylesheets="@../../css/app.css" text="0" textFill="WHITE" GridPane.columnSpan="4" GridPane.rowIndex="1">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

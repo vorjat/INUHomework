@@ -1,0 +1,58 @@
+.green-button {
+    -fx-background-color: lime;
+	-fx-border-width: 1px;
+	-fx-border-color: grey;
+}
+.green-button:hover {
+	-fx-background-color: green;
+}
+
+.green-button:focused {
+	-fx-border-color: blue;
+	-fx-border-width: 3px;
+}
+
+.green-button:pressed {
+	-fx-background-color: grey;
+}
+
+.orange-button {
+	-fx-background-color: orange;
+	-fx-border-width: 1px;
+	-fx-border-color: grey;
+}
+.orange-button:hover {
+	-fx-background-color: red;
+}
+.orange-button:focused {
+	-fx-border-color: blue;
+	-fx-border-width: 3px;
+}
+
+.orange-button:pressed {
+	-fx-background-color: grey;
+}
+
+.panel-label {
+	-fx-background-color: grey;
+}
+
+
+.black-button {
+    -fx-background-color: black;
+	-fx-font-color: white;
+	-fx-border-width: 1px;
+	-fx-border-color: grey;
+}
+.black-button:hover {
+	-fx-background-color: blue;
+}
+
+.black-button:focused {
+	-fx-border-color: blue;
+	-fx-border-width: 3px;
+}
+
+.black-button:pressed {
+	-fx-background-color: grey;
+}
